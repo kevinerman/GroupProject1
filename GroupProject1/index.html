@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+    <title>Recipe API Test</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style.css">
+
+</head>
+<body>
+<center>
+
+
+<h1>Recipe API Test</h1>
+
+<form name="ingredientForm">
+    <div class="form-group">
+        <label for="ingredient-name">Ingredients</label>
+        <input class="form-control" id="ingredient-name" type="text">
+    </div>
+    <button class="btn btn-primary" id="submit-recipe" type="submit">Submit</button>
+</form>
+    <hr>
+
+    <div id="ingredientDisplay">
+    </div>
+
+    <button class="btn btn-primary" id="start-over" type="submit">Start Over</button>
+
+
+    <container>
+        <div class="row">
+            <div class="col-sm-3" id="recipeDisplay">
+            </div>
+
+        <div class="col-sm-3" id="videoDisplay">
+            <iframe frameborder="0" width="480" height="270" src="http://www.dailymotion.com/embed/video/xzvjxk" allowfullscreen allow="autoplay"></iframe>
+        </div>
+    </div>
+    </container>
+
+    <container>
+        <h1> Saved Recipes</h1>
+        <div class="row">
+            <div class="col-sm-5" id="savedRecipeDisplay">
+            </div>
+        </div>
+    </container>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/java.js"></script>
+</body>
