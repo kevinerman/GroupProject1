@@ -66,6 +66,7 @@ $("#submit-recipe").on("click", function (event) {
         console.log(results);
 
         $("#recipeDisplay").empty();
+        $("#videoDisplay").empty();
 
         for (var i = 0; i < 10; i++) {
 
