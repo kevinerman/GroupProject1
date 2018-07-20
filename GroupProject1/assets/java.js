@@ -29,7 +29,7 @@ for (var m = 1; m <= counter; m++) {
 
   var savedRecipeImageDisplay = $("<img class='img-responsive'>").attr("src", savedRecipeImage);
 
-  var savedURLDisplay = $("<a>").attr("href", savedRecipeURL).text(savedRecipeURL);
+  var savedURLDisplay = $("<a target='_blank'>").attr("href", savedRecipeURL).text(savedRecipeURL);
 
 savedRecipeDiv.append(savedTitleDisplay);
 savedRecipeDiv.append(savedRecipeImageDisplay);
@@ -88,7 +88,7 @@ $("#submit-recipe").on("click", function (event) {
 
             var recipeURL = results.recipes[i].f2f_url;
 
-            var recipeURLDisplay = $("<a>").attr("href", recipeURL).text(recipeURL);
+            var recipeURLDisplay = $("<a target='_blank'>").attr("href", recipeURL).text(recipeURL);
 
             newRecipeDiv.append(recipeURLDisplay);
 
@@ -132,7 +132,7 @@ $("#submit-recipe").on("click", function (event) {
 
                     videoURL = response2.list[k].id;
 
-                    var videoIframe = $("<iframe frameborder='0' width='480' height='270' allowfullscreen>")
+                    var videoIframe = $("<iframe frameborder='0' width='480' height='270' allowfullscreen='autoplay'>")
 
                     videoIframe.attr("src", "https://www.dailymotion.com/embed/video/" + videoURL);
 
